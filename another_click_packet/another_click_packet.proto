@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package click_packet;
+package another_click_packet;
 
 option go_package = "./";
 
@@ -13,7 +13,7 @@ Remember that you have to edit to package "message"
 */
 
 
-message Click_Packet {
+message Another_Click_Packet {
 
     message Legs {
         string from = 1;

@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.6.1
-// source: click_packet.proto
+// source: another_click_packet.proto
 
-package click_packet
+package another_click_packet
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-type Click_Packet struct {
+type Another_Click_Packet struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -38,29 +38,29 @@ type Click_Packet struct {
 	TripType          string                        `protobuf:"bytes,11,opt,name=tripType,proto3" json:"tripType,omitempty"`
 	Domain            string                        `protobuf:"bytes,12,opt,name=domain,proto3" json:"domain,omitempty"`
 	IsBaggageIncluded bool                          `protobuf:"varint,13,opt,name=isBaggageIncluded,proto3" json:"isBaggageIncluded,omitempty"`
-	Legs              []*Click_Packet_Legs  `protobuf:"bytes,14,rep,name=legs,proto3" json:"legs,omitempty"`
+	Legs              []*Another_Click_Packet_Legs  `protobuf:"bytes,14,rep,name=legs,proto3" json:"legs,omitempty"`
 	Device            string                        `protobuf:"bytes,15,opt,name=device,proto3" json:"device,omitempty"`
-	Clicked           *Click_Packet_Clicked `protobuf:"bytes,16,opt,name=clicked,proto3" json:"clicked,omitempty"`
+	Clicked           *Another_Click_Packet_Clicked `protobuf:"bytes,16,opt,name=clicked,proto3" json:"clicked,omitempty"`
 	SearchIdentifier  string                        `protobuf:"bytes,17,opt,name=searchIdentifier,proto3" json:"searchIdentifier,omitempty"`
 }
 
-func (x *Click_Packet) Reset() {
-	*x = Click_Packet{}
+func (x *Another_Click_Packet) Reset() {
+	*x = Another_Click_Packet{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_click_packet_proto_msgTypes[0]
+		mi := &file_another_click_packet_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Click_Packet) String() string {
+func (x *Another_Click_Packet) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Click_Packet) ProtoMessage() {}
+func (*Another_Click_Packet) ProtoMessage() {}
 
-func (x *Click_Packet) ProtoReflect() protoreflect.Message {
-	mi := &file_click_packet_proto_msgTypes[0]
+func (x *Another_Click_Packet) ProtoReflect() protoreflect.Message {
+	mi := &file_another_click_packet_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -71,131 +71,131 @@ func (x *Click_Packet) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Click_Packet.ProtoReflect.Descriptor instead.
-func (*Click_Packet) Descriptor() ([]byte, []int) {
-	return file_click_packet_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use Another_Click_Packet.ProtoReflect.Descriptor instead.
+func (*Another_Click_Packet) Descriptor() ([]byte, []int) {
+	return file_another_click_packet_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Click_Packet) GetShowresultId() string {
+func (x *Another_Click_Packet) GetShowresultId() string {
 	if x != nil {
 		return x.ShowresultId
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetLeaveDate() string {
+func (x *Another_Click_Packet) GetLeaveDate() string {
 	if x != nil {
 		return x.LeaveDate
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetHomeDate() string {
+func (x *Another_Click_Packet) GetHomeDate() string {
 	if x != nil {
 		return x.HomeDate
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetAdults() uint32 {
+func (x *Another_Click_Packet) GetAdults() uint32 {
 	if x != nil {
 		return x.Adults
 	}
 	return 0
 }
 
-func (x *Click_Packet) GetChildrenAges() string {
+func (x *Another_Click_Packet) GetChildrenAges() string {
 	if x != nil {
 		return x.ChildrenAges
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetYouthAges() string {
+func (x *Another_Click_Packet) GetYouthAges() string {
 	if x != nil {
 		return x.YouthAges
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetTicketType() string {
+func (x *Another_Click_Packet) GetTicketType() string {
 	if x != nil {
 		return x.TicketType
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetSearchTimestamp() string {
+func (x *Another_Click_Packet) GetSearchTimestamp() string {
 	if x != nil {
 		return x.SearchTimestamp
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetTo() string {
+func (x *Another_Click_Packet) GetTo() string {
 	if x != nil {
 		return x.To
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetFrom() string {
+func (x *Another_Click_Packet) GetFrom() string {
 	if x != nil {
 		return x.From
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetTripType() string {
+func (x *Another_Click_Packet) GetTripType() string {
 	if x != nil {
 		return x.TripType
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetDomain() string {
+func (x *Another_Click_Packet) GetDomain() string {
 	if x != nil {
 		return x.Domain
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetIsBaggageIncluded() bool {
+func (x *Another_Click_Packet) GetIsBaggageIncluded() bool {
 	if x != nil {
 		return x.IsBaggageIncluded
 	}
 	return false
 }
 
-func (x *Click_Packet) GetLegs() []*Click_Packet_Legs {
+func (x *Another_Click_Packet) GetLegs() []*Another_Click_Packet_Legs {
 	if x != nil {
 		return x.Legs
 	}
 	return nil
 }
 
-func (x *Click_Packet) GetDevice() string {
+func (x *Another_Click_Packet) GetDevice() string {
 	if x != nil {
 		return x.Device
 	}
 	return ""
 }
 
-func (x *Click_Packet) GetClicked() *Click_Packet_Clicked {
+func (x *Another_Click_Packet) GetClicked() *Another_Click_Packet_Clicked {
 	if x != nil {
 		return x.Clicked
 	}
 	return nil
 }
 
-func (x *Click_Packet) GetSearchIdentifier() string {
+func (x *Another_Click_Packet) GetSearchIdentifier() string {
 	if x != nil {
 		return x.SearchIdentifier
 	}
 	return ""
 }
 
-type Click_Packet_Legs struct {
+type Another_Click_Packet_Legs struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -205,23 +205,23 @@ type Click_Packet_Legs struct {
 	Date string `protobuf:"bytes,3,opt,name=date,proto3" json:"date,omitempty"`
 }
 
-func (x *Click_Packet_Legs) Reset() {
-	*x = Click_Packet_Legs{}
+func (x *Another_Click_Packet_Legs) Reset() {
+	*x = Another_Click_Packet_Legs{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_click_packet_proto_msgTypes[1]
+		mi := &file_another_click_packet_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Click_Packet_Legs) String() string {
+func (x *Another_Click_Packet_Legs) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Click_Packet_Legs) ProtoMessage() {}
+func (*Another_Click_Packet_Legs) ProtoMessage() {}
 
-func (x *Click_Packet_Legs) ProtoReflect() protoreflect.Message {
-	mi := &file_click_packet_proto_msgTypes[1]
+func (x *Another_Click_Packet_Legs) ProtoReflect() protoreflect.Message {
+	mi := &file_another_click_packet_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -232,33 +232,33 @@ func (x *Click_Packet_Legs) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Click_Packet_Legs.ProtoReflect.Descriptor instead.
-func (*Click_Packet_Legs) Descriptor() ([]byte, []int) {
-	return file_click_packet_proto_rawDescGZIP(), []int{0, 0}
+// Deprecated: Use Another_Click_Packet_Legs.ProtoReflect.Descriptor instead.
+func (*Another_Click_Packet_Legs) Descriptor() ([]byte, []int) {
+	return file_another_click_packet_proto_rawDescGZIP(), []int{0, 0}
 }
 
-func (x *Click_Packet_Legs) GetFrom() string {
+func (x *Another_Click_Packet_Legs) GetFrom() string {
 	if x != nil {
 		return x.From
 	}
 	return ""
 }
 
-func (x *Click_Packet_Legs) GetTo() string {
+func (x *Another_Click_Packet_Legs) GetTo() string {
 	if x != nil {
 		return x.To
 	}
 	return ""
 }
 
-func (x *Click_Packet_Legs) GetDate() string {
+func (x *Another_Click_Packet_Legs) GetDate() string {
 	if x != nil {
 		return x.Date
 	}
 	return ""
 }
 
-type Click_Packet_Clicked struct {
+type Another_Click_Packet_Clicked struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -267,23 +267,23 @@ type Click_Packet_Clicked struct {
 	Price     uint32 `protobuf:"varint,2,opt,name=price,proto3" json:"price,omitempty"`
 }
 
-func (x *Click_Packet_Clicked) Reset() {
-	*x = Click_Packet_Clicked{}
+func (x *Another_Click_Packet_Clicked) Reset() {
+	*x = Another_Click_Packet_Clicked{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_click_packet_proto_msgTypes[2]
+		mi := &file_another_click_packet_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Click_Packet_Clicked) String() string {
+func (x *Another_Click_Packet_Clicked) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Click_Packet_Clicked) ProtoMessage() {}
+func (*Another_Click_Packet_Clicked) ProtoMessage() {}
 
-func (x *Click_Packet_Clicked) ProtoReflect() protoreflect.Message {
-	mi := &file_click_packet_proto_msgTypes[2]
+func (x *Another_Click_Packet_Clicked) ProtoReflect() protoreflect.Message {
+	mi := &file_another_click_packet_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -294,28 +294,28 @@ func (x *Click_Packet_Clicked) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Click_Packet_Clicked.ProtoReflect.Descriptor instead.
-func (*Click_Packet_Clicked) Descriptor() ([]byte, []int) {
-	return file_click_packet_proto_rawDescGZIP(), []int{0, 1}
+// Deprecated: Use Another_Click_Packet_Clicked.ProtoReflect.Descriptor instead.
+func (*Another_Click_Packet_Clicked) Descriptor() ([]byte, []int) {
+	return file_another_click_packet_proto_rawDescGZIP(), []int{0, 1}
 }
 
-func (x *Click_Packet_Clicked) GetAgentCode() string {
+func (x *Another_Click_Packet_Clicked) GetAgentCode() string {
 	if x != nil {
 		return x.AgentCode
 	}
 	return ""
 }
 
-func (x *Click_Packet_Clicked) GetPrice() uint32 {
+func (x *Another_Click_Packet_Clicked) GetPrice() uint32 {
 	if x != nil {
 		return x.Price
 	}
 	return 0
 }
 
-var File_click_packet_proto protoreflect.FileDescriptor
+var File_another_click_packet_proto protoreflect.FileDescriptor
 
-var file_click_packet_proto_rawDesc = []byte{
+var file_another_click_packet_proto_rawDesc = []byte{
 	0x0a, 0x1a, 0x61, 0x6e, 0x6f, 0x74, 0x68, 0x65, 0x72, 0x5f, 0x63, 0x6c, 0x69, 0x63, 0x6b, 0x5f,
 	0x70, 0x61, 0x63, 0x6b, 0x65, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x14, 0x61, 0x6e,
 	0x6f, 0x74, 0x68, 0x65, 0x72, 0x5f, 0x63, 0x6c, 0x69, 0x63, 0x6b, 0x5f, 0x70, 0x61, 0x63, 0x6b,
@@ -371,26 +371,26 @@ var file_click_packet_proto_rawDesc = []byte{
 }
 
 var (
-	file_click_packet_proto_rawDescOnce sync.Once
-	file_click_packet_proto_rawDescData = file_click_packet_proto_rawDesc
+	file_another_click_packet_proto_rawDescOnce sync.Once
+	file_another_click_packet_proto_rawDescData = file_another_click_packet_proto_rawDesc
 )
 
-func file_click_packet_proto_rawDescGZIP() []byte {
-	file_click_packet_proto_rawDescOnce.Do(func() {
-		file_click_packet_proto_rawDescData = protoimpl.X.CompressGZIP(file_click_packet_proto_rawDescData)
+func file_another_click_packet_proto_rawDescGZIP() []byte {
+	file_another_click_packet_proto_rawDescOnce.Do(func() {
+		file_another_click_packet_proto_rawDescData = protoimpl.X.CompressGZIP(file_another_click_packet_proto_rawDescData)
 	})
-	return file_click_packet_proto_rawDescData
+	return file_another_click_packet_proto_rawDescData
 }
 
-var file_click_packet_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_click_packet_proto_goTypes = []interface{}{
-	(*Click_Packet)(nil),         // 0: click_packet.Click_Packet
-	(*Click_Packet_Legs)(nil),    // 1: click_packet.Click_Packet.Legs
-	(*Click_Packet_Clicked)(nil), // 2: click_packet.Click_Packet.Clicked
+var file_another_click_packet_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_another_click_packet_proto_goTypes = []interface{}{
+	(*Another_Click_Packet)(nil),         // 0: another_click_packet.Another_Click_Packet
+	(*Another_Click_Packet_Legs)(nil),    // 1: another_click_packet.Another_Click_Packet.Legs
+	(*Another_Click_Packet_Clicked)(nil), // 2: another_click_packet.Another_Click_Packet.Clicked
 }
-var file_click_packet_proto_depIdxs = []int32{
-	1, // 0: click_packet.Click_Packet.legs:type_name -> click_packet.Click_Packet.Legs
-	2, // 1: click_packet.Click_Packet.clicked:type_name -> click_packet.Click_Packet.Clicked
+var file_another_click_packet_proto_depIdxs = []int32{
+	1, // 0: another_click_packet.Another_Click_Packet.legs:type_name -> another_click_packet.Another_Click_Packet.Legs
+	2, // 1: another_click_packet.Another_Click_Packet.clicked:type_name -> another_click_packet.Another_Click_Packet.Clicked
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
@@ -398,14 +398,14 @@ var file_click_packet_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_click_packet_proto_init() }
-func file_click_packet_proto_init() {
-	if File_click_packet_proto != nil {
+func init() { file_another_click_packet_proto_init() }
+func file_another_click_packet_proto_init() {
+	if File_another_click_packet_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_click_packet_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Click_Packet); i {
+		file_another_click_packet_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Another_Click_Packet); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -416,8 +416,8 @@ func file_click_packet_proto_init() {
 				return nil
 			}
 		}
-		file_click_packet_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Click_Packet_Legs); i {
+		file_another_click_packet_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Another_Click_Packet_Legs); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -428,8 +428,8 @@ func file_click_packet_proto_init() {
 				return nil
 			}
 		}
-		file_click_packet_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Click_Packet_Clicked); i {
+		file_another_click_packet_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Another_Click_Packet_Clicked); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -445,18 +445,18 @@ func file_click_packet_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_click_packet_proto_rawDesc,
+			RawDescriptor: file_another_click_packet_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_click_packet_proto_goTypes,
-		DependencyIndexes: file_click_packet_proto_depIdxs,
-		MessageInfos:      file_click_packet_proto_msgTypes,
+		GoTypes:           file_another_click_packet_proto_goTypes,
+		DependencyIndexes: file_another_click_packet_proto_depIdxs,
+		MessageInfos:      file_another_click_packet_proto_msgTypes,
 	}.Build()
-	File_click_packet_proto = out.File
-	file_click_packet_proto_rawDesc = nil
-	file_click_packet_proto_goTypes = nil
-	file_click_packet_proto_depIdxs = nil
+	File_another_click_packet_proto = out.File
+	file_another_click_packet_proto_rawDesc = nil
+	file_another_click_packet_proto_goTypes = nil
+	file_another_click_packet_proto_depIdxs = nil
 }
