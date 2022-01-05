@@ -1,3 +1,3 @@
-module another_search_packet
+module Flightmate-Stream-Protobuf/another_search_packet
 
 go 1.14
