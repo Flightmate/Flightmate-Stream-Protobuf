@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.6.1
-// source: another_search_packet.proto
+// source: search_packet.proto
 
-package another_search_packet
+package search_packet
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-type Another_Search_Packet struct {
+type Search_Packet struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -38,28 +38,28 @@ type Another_Search_Packet struct {
 	TripType          string                           `protobuf:"bytes,11,opt,name=tripType,proto3" json:"tripType,omitempty"`
 	Domain            string                           `protobuf:"bytes,12,opt,name=domain,proto3" json:"domain,omitempty"`
 	IsBaggageIncluded bool                             `protobuf:"varint,13,opt,name=isBaggageIncluded,proto3" json:"isBaggageIncluded,omitempty"`
-	Legs              []*Another_Search_Packet_Legs    `protobuf:"bytes,14,rep,name=legs,proto3" json:"legs,omitempty"`
+	Legs              []*Search_Packet_Legs    `protobuf:"bytes,14,rep,name=legs,proto3" json:"legs,omitempty"`
 	Device            string                           `protobuf:"bytes,15,opt,name=device,proto3" json:"device,omitempty"`
-	Flights           []*Another_Search_Packet_Flights `protobuf:"bytes,16,rep,name=flights,proto3" json:"flights,omitempty"`
+	Flights           []*Search_Packet_Flights `protobuf:"bytes,16,rep,name=flights,proto3" json:"flights,omitempty"`
 }
 
-func (x *Another_Search_Packet) Reset() {
-	*x = Another_Search_Packet{}
+func (x *Search_Packet) Reset() {
+	*x = Search_Packet{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[0]
+		mi := &file_search_packet_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet) String() string {
+func (x *Search_Packet) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet) ProtoMessage() {}
+func (*Search_Packet) ProtoMessage() {}
 
-func (x *Another_Search_Packet) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[0]
+func (x *Search_Packet) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -70,124 +70,124 @@ func (x *Another_Search_Packet) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use Search_Packet.ProtoReflect.Descriptor instead.
+func (*Search_Packet) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Another_Search_Packet) GetShowresultId() string {
+func (x *Search_Packet) GetShowresultId() string {
 	if x != nil {
 		return x.ShowresultId
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetLeaveDate() string {
+func (x *Search_Packet) GetLeaveDate() string {
 	if x != nil {
 		return x.LeaveDate
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetHomeDate() string {
+func (x *Search_Packet) GetHomeDate() string {
 	if x != nil {
 		return x.HomeDate
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetAdults() uint32 {
+func (x *Search_Packet) GetAdults() uint32 {
 	if x != nil {
 		return x.Adults
 	}
 	return 0
 }
 
-func (x *Another_Search_Packet) GetChildrenAges() string {
+func (x *Search_Packet) GetChildrenAges() string {
 	if x != nil {
 		return x.ChildrenAges
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetYouthAges() string {
+func (x *Search_Packet) GetYouthAges() string {
 	if x != nil {
 		return x.YouthAges
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetTicketType() string {
+func (x *Search_Packet) GetTicketType() string {
 	if x != nil {
 		return x.TicketType
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetSearchTimestamp() string {
+func (x *Search_Packet) GetSearchTimestamp() string {
 	if x != nil {
 		return x.SearchTimestamp
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetTo() string {
+func (x *Search_Packet) GetTo() string {
 	if x != nil {
 		return x.To
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetFrom() string {
+func (x *Search_Packet) GetFrom() string {
 	if x != nil {
 		return x.From
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetTripType() string {
+func (x *Search_Packet) GetTripType() string {
 	if x != nil {
 		return x.TripType
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetDomain() string {
+func (x *Search_Packet) GetDomain() string {
 	if x != nil {
 		return x.Domain
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetIsBaggageIncluded() bool {
+func (x *Search_Packet) GetIsBaggageIncluded() bool {
 	if x != nil {
 		return x.IsBaggageIncluded
 	}
 	return false
 }
 
-func (x *Another_Search_Packet) GetLegs() []*Another_Search_Packet_Legs {
+func (x *Search_Packet) GetLegs() []*Search_Packet_Legs {
 	if x != nil {
 		return x.Legs
 	}
 	return nil
 }
 
-func (x *Another_Search_Packet) GetDevice() string {
+func (x *Search_Packet) GetDevice() string {
 	if x != nil {
 		return x.Device
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet) GetFlights() []*Another_Search_Packet_Flights {
+func (x *Search_Packet) GetFlights() []*Search_Packet_Flights {
 	if x != nil {
 		return x.Flights
 	}
 	return nil
 }
 
-type Another_Search_Packet_Legs struct {
+type Search_Packet_Legs struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -197,23 +197,23 @@ type Another_Search_Packet_Legs struct {
 	Date string `protobuf:"bytes,3,opt,name=date,proto3" json:"date,omitempty"`
 }
 
-func (x *Another_Search_Packet_Legs) Reset() {
-	*x = Another_Search_Packet_Legs{}
+func (x *Search_Packet_Legs) Reset() {
+	*x = Search_Packet_Legs{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[1]
+		mi := &file_search_packet_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet_Legs) String() string {
+func (x *Search_Packet_Legs) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet_Legs) ProtoMessage() {}
+func (*Search_Packet_Legs) ProtoMessage() {}
 
-func (x *Another_Search_Packet_Legs) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[1]
+func (x *Search_Packet_Legs) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -224,33 +224,33 @@ func (x *Another_Search_Packet_Legs) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet_Legs.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet_Legs) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0, 0}
+// Deprecated: Use Search_Packet_Legs.ProtoReflect.Descriptor instead.
+func (*Search_Packet_Legs) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0, 0}
 }
 
-func (x *Another_Search_Packet_Legs) GetFrom() string {
+func (x *Search_Packet_Legs) GetFrom() string {
 	if x != nil {
 		return x.From
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Legs) GetTo() string {
+func (x *Search_Packet_Legs) GetTo() string {
 	if x != nil {
 		return x.To
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Legs) GetDate() string {
+func (x *Search_Packet_Legs) GetDate() string {
 	if x != nil {
 		return x.Date
 	}
 	return ""
 }
 
-type Another_Search_Packet_Agents struct {
+type Search_Packet_Agents struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -259,23 +259,23 @@ type Another_Search_Packet_Agents struct {
 	Price uint32 `protobuf:"varint,2,opt,name=price,proto3" json:"price,omitempty"`
 }
 
-func (x *Another_Search_Packet_Agents) Reset() {
-	*x = Another_Search_Packet_Agents{}
+func (x *Search_Packet_Agents) Reset() {
+	*x = Search_Packet_Agents{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[2]
+		mi := &file_search_packet_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet_Agents) String() string {
+func (x *Search_Packet_Agents) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet_Agents) ProtoMessage() {}
+func (*Search_Packet_Agents) ProtoMessage() {}
 
-func (x *Another_Search_Packet_Agents) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[2]
+func (x *Search_Packet_Agents) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -286,26 +286,26 @@ func (x *Another_Search_Packet_Agents) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet_Agents.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet_Agents) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0, 1}
+// Deprecated: Use Search_Packet_Agents.ProtoReflect.Descriptor instead.
+func (*Search_Packet_Agents) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0, 1}
 }
 
-func (x *Another_Search_Packet_Agents) GetCode() string {
+func (x *Search_Packet_Agents) GetCode() string {
 	if x != nil {
 		return x.Code
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Agents) GetPrice() uint32 {
+func (x *Search_Packet_Agents) GetPrice() uint32 {
 	if x != nil {
 		return x.Price
 	}
 	return 0
 }
 
-type Another_Search_Packet_Segments struct {
+type Search_Packet_Segments struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -318,23 +318,23 @@ type Another_Search_Packet_Segments struct {
 	Flight           string `protobuf:"bytes,6,opt,name=flight,proto3" json:"flight,omitempty"`
 }
 
-func (x *Another_Search_Packet_Segments) Reset() {
-	*x = Another_Search_Packet_Segments{}
+func (x *Search_Packet_Segments) Reset() {
+	*x = Search_Packet_Segments{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[3]
+		mi := &file_search_packet_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet_Segments) String() string {
+func (x *Search_Packet_Segments) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet_Segments) ProtoMessage() {}
+func (*Search_Packet_Segments) ProtoMessage() {}
 
-func (x *Another_Search_Packet_Segments) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[3]
+func (x *Search_Packet_Segments) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -345,78 +345,78 @@ func (x *Another_Search_Packet_Segments) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet_Segments.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet_Segments) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0, 2}
+// Deprecated: Use Search_Packet_Segments.ProtoReflect.Descriptor instead.
+func (*Search_Packet_Segments) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0, 2}
 }
 
-func (x *Another_Search_Packet_Segments) GetArrivalAirport() string {
+func (x *Search_Packet_Segments) GetArrivalAirport() string {
 	if x != nil {
 		return x.ArrivalAirport
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Segments) GetArrivalDate() string {
+func (x *Search_Packet_Segments) GetArrivalDate() string {
 	if x != nil {
 		return x.ArrivalDate
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Segments) GetDepartureAirport() string {
+func (x *Search_Packet_Segments) GetDepartureAirport() string {
 	if x != nil {
 		return x.DepartureAirport
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Segments) GetDepartureDate() string {
+func (x *Search_Packet_Segments) GetDepartureDate() string {
 	if x != nil {
 		return x.DepartureDate
 	}
 	return ""
 }
 
-func (x *Another_Search_Packet_Segments) GetTraveltime() uint32 {
+func (x *Search_Packet_Segments) GetTraveltime() uint32 {
 	if x != nil {
 		return x.Traveltime
 	}
 	return 0
 }
 
-func (x *Another_Search_Packet_Segments) GetFlight() string {
+func (x *Search_Packet_Segments) GetFlight() string {
 	if x != nil {
 		return x.Flight
 	}
 	return ""
 }
 
-type Another_Search_Packet_Trips struct {
+type Search_Packet_Trips struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Segments []*Another_Search_Packet_Segments `protobuf:"bytes,1,rep,name=segments,proto3" json:"segments,omitempty"`
+	Segments []*Search_Packet_Segments `protobuf:"bytes,1,rep,name=segments,proto3" json:"segments,omitempty"`
 }
 
-func (x *Another_Search_Packet_Trips) Reset() {
-	*x = Another_Search_Packet_Trips{}
+func (x *Search_Packet_Trips) Reset() {
+	*x = Search_Packet_Trips{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[4]
+		mi := &file_search_packet_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet_Trips) String() string {
+func (x *Search_Packet_Trips) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet_Trips) ProtoMessage() {}
+func (*Search_Packet_Trips) ProtoMessage() {}
 
-func (x *Another_Search_Packet_Trips) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[4]
+func (x *Search_Packet_Trips) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -427,45 +427,45 @@ func (x *Another_Search_Packet_Trips) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet_Trips.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet_Trips) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0, 3}
+// Deprecated: Use Search_Packet_Trips.ProtoReflect.Descriptor instead.
+func (*Search_Packet_Trips) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0, 3}
 }
 
-func (x *Another_Search_Packet_Trips) GetSegments() []*Another_Search_Packet_Segments {
+func (x *Search_Packet_Trips) GetSegments() []*Search_Packet_Segments {
 	if x != nil {
 		return x.Segments
 	}
 	return nil
 }
 
-type Another_Search_Packet_Flights struct {
+type Search_Packet_Flights struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Agents           []*Another_Search_Packet_Agents `protobuf:"bytes,1,rep,name=agents,proto3" json:"agents,omitempty"`
-	Trips            []*Another_Search_Packet_Trips  `protobuf:"bytes,2,rep,name=trips,proto3" json:"trips,omitempty"`
+	Agents           []*Search_Packet_Agents `protobuf:"bytes,1,rep,name=agents,proto3" json:"agents,omitempty"`
+	Trips            []*Search_Packet_Trips  `protobuf:"bytes,2,rep,name=trips,proto3" json:"trips,omitempty"`
 	SearchIdentifier string                          `protobuf:"bytes,3,opt,name=searchIdentifier,proto3" json:"searchIdentifier,omitempty"`
 }
 
-func (x *Another_Search_Packet_Flights) Reset() {
-	*x = Another_Search_Packet_Flights{}
+func (x *Search_Packet_Flights) Reset() {
+	*x = Search_Packet_Flights{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_another_search_packet_proto_msgTypes[5]
+		mi := &file_search_packet_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
 }
 
-func (x *Another_Search_Packet_Flights) String() string {
+func (x *Search_Packet_Flights) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Another_Search_Packet_Flights) ProtoMessage() {}
+func (*Search_Packet_Flights) ProtoMessage() {}
 
-func (x *Another_Search_Packet_Flights) ProtoReflect() protoreflect.Message {
-	mi := &file_another_search_packet_proto_msgTypes[5]
+func (x *Search_Packet_Flights) ProtoReflect() protoreflect.Message {
+	mi := &file_search_packet_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -476,35 +476,35 @@ func (x *Another_Search_Packet_Flights) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Another_Search_Packet_Flights.ProtoReflect.Descriptor instead.
-func (*Another_Search_Packet_Flights) Descriptor() ([]byte, []int) {
-	return file_another_search_packet_proto_rawDescGZIP(), []int{0, 4}
+// Deprecated: Use Search_Packet_Flights.ProtoReflect.Descriptor instead.
+func (*Search_Packet_Flights) Descriptor() ([]byte, []int) {
+	return file_search_packet_proto_rawDescGZIP(), []int{0, 4}
 }
 
-func (x *Another_Search_Packet_Flights) GetAgents() []*Another_Search_Packet_Agents {
+func (x *Search_Packet_Flights) GetAgents() []*Search_Packet_Agents {
 	if x != nil {
 		return x.Agents
 	}
 	return nil
 }
 
-func (x *Another_Search_Packet_Flights) GetTrips() []*Another_Search_Packet_Trips {
+func (x *Search_Packet_Flights) GetTrips() []*Search_Packet_Trips {
 	if x != nil {
 		return x.Trips
 	}
 	return nil
 }
 
-func (x *Another_Search_Packet_Flights) GetSearchIdentifier() string {
+func (x *Search_Packet_Flights) GetSearchIdentifier() string {
 	if x != nil {
 		return x.SearchIdentifier
 	}
 	return ""
 }
 
-var File_another_search_packet_proto protoreflect.FileDescriptor
+var File_search_packet_proto protoreflect.FileDescriptor
 
-var file_another_search_packet_proto_rawDesc = []byte{
+var file_search_packet_proto_rawDesc = []byte{
 	0x0a, 0x1b, 0x61, 0x6e, 0x6f, 0x74, 0x68, 0x65, 0x72, 0x5f, 0x73, 0x65, 0x61, 0x72, 0x63, 0x68,
 	0x5f, 0x70, 0x61, 0x63, 0x6b, 0x65, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x15, 0x61,
 	0x6e, 0x6f, 0x74, 0x68, 0x65, 0x72, 0x5f, 0x73, 0x65, 0x61, 0x72, 0x63, 0x68, 0x5f, 0x70, 0x61,
@@ -590,32 +590,32 @@ var file_another_search_packet_proto_rawDesc = []byte{
 }
 
 var (
-	file_another_search_packet_proto_rawDescOnce sync.Once
-	file_another_search_packet_proto_rawDescData = file_another_search_packet_proto_rawDesc
+	file_search_packet_proto_rawDescOnce sync.Once
+	file_search_packet_proto_rawDescData = file_search_packet_proto_rawDesc
 )
 
-func file_another_search_packet_proto_rawDescGZIP() []byte {
-	file_another_search_packet_proto_rawDescOnce.Do(func() {
-		file_another_search_packet_proto_rawDescData = protoimpl.X.CompressGZIP(file_another_search_packet_proto_rawDescData)
+func file_search_packet_proto_rawDescGZIP() []byte {
+	file_search_packet_proto_rawDescOnce.Do(func() {
+		file_search_packet_proto_rawDescData = protoimpl.X.CompressGZIP(file_search_packet_proto_rawDescData)
 	})
-	return file_another_search_packet_proto_rawDescData
+	return file_search_packet_proto_rawDescData
 }
 
-var file_another_search_packet_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_another_search_packet_proto_goTypes = []interface{}{
-	(*Another_Search_Packet)(nil),          // 0: another_search_packet.Another_Search_Packet
-	(*Another_Search_Packet_Legs)(nil),     // 1: another_search_packet.Another_Search_Packet.Legs
-	(*Another_Search_Packet_Agents)(nil),   // 2: another_search_packet.Another_Search_Packet.Agents
-	(*Another_Search_Packet_Segments)(nil), // 3: another_search_packet.Another_Search_Packet.Segments
-	(*Another_Search_Packet_Trips)(nil),    // 4: another_search_packet.Another_Search_Packet.Trips
-	(*Another_Search_Packet_Flights)(nil),  // 5: another_search_packet.Another_Search_Packet.Flights
+var file_search_packet_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_search_packet_proto_goTypes = []interface{}{
+	(*Search_Packet)(nil),          // 0: search_packet.Search_Packet
+	(*Search_Packet_Legs)(nil),     // 1: search_packet.Search_Packet.Legs
+	(*Search_Packet_Agents)(nil),   // 2: search_packet.Search_Packet.Agents
+	(*Search_Packet_Segments)(nil), // 3: search_packet.Search_Packet.Segments
+	(*Search_Packet_Trips)(nil),    // 4: search_packet.Search_Packet.Trips
+	(*Search_Packet_Flights)(nil),  // 5: search_packet.Search_Packet.Flights
 }
-var file_another_search_packet_proto_depIdxs = []int32{
-	1, // 0: another_search_packet.Another_Search_Packet.legs:type_name -> another_search_packet.Another_Search_Packet.Legs
-	5, // 1: another_search_packet.Another_Search_Packet.flights:type_name -> another_search_packet.Another_Search_Packet.Flights
-	3, // 2: another_search_packet.Another_Search_Packet.Trips.segments:type_name -> another_search_packet.Another_Search_Packet.Segments
-	2, // 3: another_search_packet.Another_Search_Packet.Flights.agents:type_name -> another_search_packet.Another_Search_Packet.Agents
-	4, // 4: another_search_packet.Another_Search_Packet.Flights.trips:type_name -> another_search_packet.Another_Search_Packet.Trips
+var file_search_packet_proto_depIdxs = []int32{
+	1, // 0: search_packet.Search_Packet.legs:type_name -> search_packet.Search_Packet.Legs
+	5, // 1: search_packet.Search_Packet.flights:type_name -> search_packet.Search_Packet.Flights
+	3, // 2: search_packet.Search_Packet.Trips.segments:type_name -> search_packet.Search_Packet.Segments
+	2, // 3: search_packet.Search_Packet.Flights.agents:type_name -> search_packet.Search_Packet.Agents
+	4, // 4: search_packet.Search_Packet.Flights.trips:type_name -> search_packet.Search_Packet.Trips
 	5, // [5:5] is the sub-list for method output_type
 	5, // [5:5] is the sub-list for method input_type
 	5, // [5:5] is the sub-list for extension type_name
@@ -623,14 +623,14 @@ var file_another_search_packet_proto_depIdxs = []int32{
 	0, // [0:5] is the sub-list for field type_name
 }
 
-func init() { file_another_search_packet_proto_init() }
-func file_another_search_packet_proto_init() {
-	if File_another_search_packet_proto != nil {
+func init() { file_search_packet_proto_init() }
+func file_search_packet_proto_init() {
+	if File_search_packet_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_another_search_packet_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet); i {
+		file_search_packet_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -641,8 +641,8 @@ func file_another_search_packet_proto_init() {
 				return nil
 			}
 		}
-		file_another_search_packet_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet_Legs); i {
+		file_search_packet_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet_Legs); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -653,8 +653,8 @@ func file_another_search_packet_proto_init() {
 				return nil
 			}
 		}
-		file_another_search_packet_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet_Agents); i {
+		file_search_packet_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet_Agents); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -665,8 +665,8 @@ func file_another_search_packet_proto_init() {
 				return nil
 			}
 		}
-		file_another_search_packet_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet_Segments); i {
+		file_search_packet_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet_Segments); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -677,8 +677,8 @@ func file_another_search_packet_proto_init() {
 				return nil
 			}
 		}
-		file_another_search_packet_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet_Trips); i {
+		file_search_packet_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet_Trips); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -689,8 +689,8 @@ func file_another_search_packet_proto_init() {
 				return nil
 			}
 		}
-		file_another_search_packet_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Another_Search_Packet_Flights); i {
+		file_search_packet_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*Search_Packet_Flights); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -706,18 +706,18 @@ func file_another_search_packet_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_another_search_packet_proto_rawDesc,
+			RawDescriptor: file_search_packet_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_another_search_packet_proto_goTypes,
-		DependencyIndexes: file_another_search_packet_proto_depIdxs,
-		MessageInfos:      file_another_search_packet_proto_msgTypes,
+		GoTypes:           file_search_packet_proto_goTypes,
+		DependencyIndexes: file_search_packet_proto_depIdxs,
+		MessageInfos:      file_search_packet_proto_msgTypes,
 	}.Build()
-	File_another_search_packet_proto = out.File
-	file_another_search_packet_proto_rawDesc = nil
-	file_another_search_packet_proto_goTypes = nil
-	file_another_search_packet_proto_depIdxs = nil
+	File_search_packet_proto = out.File
+	file_search_packet_proto_rawDesc = nil
+	file_search_packet_proto_goTypes = nil
+	file_search_packet_proto_depIdxs = nil
 }
