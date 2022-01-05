@@ -1,19 +1,17 @@
 syntax = "proto3";
 
-package another_click_packet;
+package another_search_packet;
 
 option go_package = "./";
 
-
 /*
 Note that this code is irrelevant, and it's the private repo https://github.com/MazeofIth/message that matters 
-protoc --proto_path=. another_click_packet.proto --go_out=.
+protoc --proto_path=. another_search_packet.proto --go_out=.
 Last one worked, with option changed 
 Remember that you have to edit to package "message"
 */
 
-
-message Another_Click_Packet {
+message Another_Search_Packet {
 
     message Legs {
         string from = 1;
@@ -21,9 +19,28 @@ message Another_Click_Packet {
         string date = 3;
     }
 
-    message Clicked {
-        string agentCode = 1;
+    message Agents {
+        string code = 1;
         uint32 price = 2;
+    }
+
+    message Segments {
+        string arrivalAirport = 1;
+        string arrivalDate = 2;
+        string departureAirport = 3;
+        string departureDate = 4;
+        uint32 traveltime = 5;
+        string flight = 6;
+    }
+
+    message Trips {
+        repeated Segments segments = 1;
+    }
+
+    message Flights {
+        repeated Agents agents = 1;
+        repeated Trips trips = 2;
+        string searchIdentifier = 3;
     }
 
     string showresultId = 1;
@@ -41,6 +58,5 @@ message Another_Click_Packet {
     bool isBaggageIncluded = 13;
     repeated Legs legs = 14;
     string device = 15;
-    Clicked clicked = 16;
-    string searchIdentifier = 17;
+    repeated Flights flights = 16;
 }
