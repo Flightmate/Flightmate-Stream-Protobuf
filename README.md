@@ -1,0 +1,1 @@
+Protobuf specification for Flightmate-Stream
