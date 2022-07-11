@@ -30,8 +30,9 @@ message Click_Packet {
     string tripType = 11;
     string domain = 12;
     bool isBaggageIncluded = 13;
-    repeated Legs legs = 14;
-    string device = 15;
-    Clicked clicked = 16;
-    string searchIdentifier = 17;
+    string sorting = 14;
+    repeated Legs legs = 15;
+    string device = 16;
+    Clicked clicked = 17;
+    string searchIdentifier = 18;
 }
