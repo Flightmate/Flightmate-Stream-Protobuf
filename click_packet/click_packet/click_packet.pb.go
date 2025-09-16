@@ -346,7 +346,7 @@ const file_click_packet_proto_rawDesc = "" +
 	"\x04date\x18\x03 \x01(\tR\x04date\x1a=\n" +
 	"\aClicked\x12\x1c\n" +
 	"\tagentCode\x18\x01 \x01(\tR\tagentCode\x12\x14\n" +
-	"\x05price\x18\x02 \x01(\rR\x05priceB\x11Z\x0f./;click_packetb\x06proto3"
+	"\x05price\x18\x02 \x01(\rR\x05priceB\x10Z\x0e./click_packetb\x06proto3"
 
 var (
 	file_click_packet_proto_rawDescOnce sync.Once

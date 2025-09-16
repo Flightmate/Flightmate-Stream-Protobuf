@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package click_packet;
 
-option go_package = "./";
+option go_package = "./click_packet";
 
 message Click_Packet {
 

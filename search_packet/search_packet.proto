@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package search_packet;
 
-option go_package = "./";
+option go_package = "./search_packet";
 
 message Search_Packet {
 

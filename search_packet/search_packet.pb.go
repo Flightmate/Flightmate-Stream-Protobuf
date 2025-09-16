@@ -4,7 +4,7 @@
 // 	protoc        v6.32.0
 // source: search_packet.proto
 
-package __
+package search_packet
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -540,7 +540,7 @@ const file_search_packet_proto_rawDesc = "" +
 	"\aFlights\x12;\n" +
 	"\x06agents\x18\x01 \x03(\v2#.search_packet.Search_Packet.AgentsR\x06agents\x128\n" +
 	"\x05trips\x18\x02 \x03(\v2\".search_packet.Search_Packet.TripsR\x05trips\x12*\n" +
-	"\x10searchIdentifier\x18\x03 \x01(\tR\x10searchIdentifierB\x04Z\x02./b\x06proto3"
+	"\x10searchIdentifier\x18\x03 \x01(\tR\x10searchIdentifierB\x12Z\x10./;search_packetb\x06proto3"
 
 var (
 	file_search_packet_proto_rawDescOnce sync.Once
