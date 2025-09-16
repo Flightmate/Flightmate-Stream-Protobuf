@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package click_packet;
 
-option go_package = "./";
+option go_package = "./click_packet";
 
 message Click_Packet {
 
@@ -30,6 +30,7 @@ message Click_Packet {
     string tripType = 11;
     string domain = 12;
     bool isBaggageIncluded = 13;
+    bool isCabinBaggageIncluded = 18;
     repeated Legs legs = 14;
     string device = 15;
     Clicked clicked = 16;

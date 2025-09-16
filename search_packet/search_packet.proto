@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package search_packet;
 
-option go_package = "./";
+option go_package = "./search_packet";
 
 message Search_Packet {
 
@@ -49,6 +49,7 @@ message Search_Packet {
     string tripType = 11;
     string domain = 12;
     bool isBaggageIncluded = 13;
+    bool isCabinBaggageIncluded = 17;
     repeated Legs legs = 14;
     string device = 15;
     repeated Flights flights = 16;
